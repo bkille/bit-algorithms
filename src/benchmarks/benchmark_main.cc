@@ -197,6 +197,10 @@ int main(int argc, char** argv) {
             BM_BitSearch, 
             "Search_Bit_Large",
             size_large);
+    //register_word_containers<decltype(BM_BitSearchShiftOr), std::vector>(
+            //BM_BitSearchShiftOr, 
+            //"SearchShiftOr_Bit_Large",
+            //size_large);
     register_bool_containers<decltype(BM_BoolSearch), std::vector>(
             BM_BoolSearch, 
             "Search_Bool_Large",
@@ -205,6 +209,10 @@ int main(int argc, char** argv) {
             BM_BitSearch_WorstCase, 
             "Search_Bit_Large_WorstCase",
             size_large);
+    //register_word_containers<decltype(BM_BitSearchShiftOr_WorstCase), std::vector>(
+            //BM_BitSearchShiftOr_WorstCase, 
+            //"SearchShiftOr_Bit_Large_WorstCase",
+            //size_large);
     register_bool_containers<decltype(BM_BoolSearch_WorstCase), std::vector>(
             BM_BoolSearch_WorstCase, 
             "Search_Bool_Large_WorstCase",
